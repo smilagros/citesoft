@@ -1,0 +1,261 @@
+\section{II. MARCO TEORICO.} \label{cap:CAPII}
+
+\subsection{2.1 Antecedentes de investigación}
+
+La capacidad humana de percibir y comprender el mundo se basa en cinco sentidos básicos: oído, tacto, olfato, gusto y vista. Al poseer estas cinco modalidades, somos capaces de percibir y comprender el mundo que nos rodea. Así, multimodal significa combinar diferentes canales de información simultáneamente para comprender nuestro entorno (\cite{akkus2023multimodaldeeplearning}). 
+\newline
+
+La investigación en el manejo del riesgo de accidente cerebrovascular (ACV) ha evolucionado significativamente con el avance de los sistemas multimodales que integran imágenes médicas y datos clínicos (\cite{Cui_2023}). Estos sistemas han permitido una mejor comprensión de los factores de riesgo y la predicción temprana de eventos cerebrovasculares mediante el uso de modelos de aprendizaje profundo (\cite{9985596}).
+\newline
+
+Anteriormente, los métodos tradicionales se centraban en la evaluación clínica y el uso de biomarcadores simples. Sin embargo, con el advenimiento del aprendizaje profundo, se ha logrado una integración más compleja de datos, lo que ha mejorado la precisión diagnóstica y la capacidad predictiva del ACV (\cite{CuiLStroke}).
+\newline
+
+Estudios previos han demostrado que la combinación de imágenes como tomografías computarizadas con datos clínicos permite una personalización más efectiva de las estrategias preventivas y terapéuticas . Esto es crucial dado que el ACV es una de las principales causas de morbilidad y mortalidad a nivel mundial, destacando la necesidad urgente de métodos diagnósticos y terapéuticos más avanzados (\cite{s21020460,app10196791})
+\newline
+
+En resumen, los antecedentes de investigación destacan la transición hacia sistemas multimodales con aprendizaje profundo como un avance significativo en la gestión del riesgo de ACV, promoviendo una mejor atención personalizada y una reducción de la carga global de la enfermedad.
+
+\subsection{2.2 Estado del Arte } 
+
+En el ámbito médico, los datos se clasifican generalmente en tres categorías principales: datos de imágenes, datos clínicos y datos ómicos. Cada modalidad representa información importante, la combinación de diferentes modalidades proporciona una visión más completa de la enfermedad (\cite{BEHRAD2022117006,Hel2021stroke}). 
+\newline
+
+Estudios recientes han demostrado que los modelos multimodales que combinan datos de imágenes y clínicos, como antecedentes médicos, edad, sexo y tratamientos médicos, pueden predecir y reducir el riesgo de ACV con mayor precisión, ayudando a los médicos a comprender mejor las características de los pacientes y la evolución de la enfermedad (\cite{Hel2021stroke,app10196791}). Por ejemplo, uno de los estudios mostró que la combinación de imágenes de MRI con datos clínicos mejoró significativamente la capacidad de predecir eventos cerebrovasculares (\cite{Fang2021stroke,BEHRAD2022117006,Gkantzios2023stroke}).
+\newline
+
+Es así que los sistemas multimodales con \textit{aprendizaje profundo} para la predicción y manejo del riesgo de ACV, las TC sin contraste pueden ser procesadas mediante técnicas de procesamiento de imágenes y análisis de patrones para extraer características relevantes. Estas características se pueden combinar con datos clínicos en un modelo predictivo para mejorar la precisión y la personalización del manejo del paciente.
+\newline
+
+En este contexto, los modelos de aprendizaje profundo multimodales permiten la extracción de características complejas y la identificación de patrones que no son evidentes con métodos tradicionales. Modelos como las redes neuronales convolucionales (CNN) y las redes neuronales recurrentes (RNN) se utilizan para analizar imágenes y datos clínicos respectivamente, mientras que arquitecturas como las redes neuronales profundas (DNN) pueden combinar estas modalidades para mejorar la precisión de las predicciones (\cite{app10196791,Chahine2023}).
+\newline
+
+A pesar de los avances, la integración efectiva de datos multimodales enfrenta varios desafíos. La heterogeneidad de los datos, la necesidad de grandes volúmenes de datos etiquetados para entrenar modelos, y la validación clínica robusta en diferentes contextos médicos y poblacionales son algunos de los obstáculos a superar (\cite{Chahine2023}).
+\newline
+
+Sin embargo, la continua evolución de las técnicas de aprendizaje profundo y la creciente disponibilidad de datos clínicos y de imágenes de alta calidad prometen avances significativos en la prevención y tratamiento del ACV. La colaboración interdisciplinaria y el desarrollo de estándares para la integración de datos multimodales serán cruciales para el éxito de estos enfoques.
+
+\subsection{2.3 Marco Conceptual} 
+\subsubsection{2.3.1 Conceptos Biológicos} 
+\paragraph{Anatomía del Cerebro}
+El cerebro se divide en tres principales componentes:
+\begin{itemize}
+    \item \textbf{Cerebro}: Compuesto por los hemisferios derecho e izquierdo, el cerebro controla el inicio y la coordinación del movimiento, la temperatura, el tacto, la visión, la audición, el juicio, el razonamiento, la resolución de problemas, las emociones y el aprendizaje.
+    
+    \item \textbf{Tronco Encefálico}: Incluye el mesencéfalo, la protuberancia y el bulbo raquídeo. Regula funciones esenciales como el movimiento de los ojos y la boca, la transmisión de sensaciones, el hambre, la respiración, la conciencia, la función cardíaca, la temperatura corporal, y movimientos involuntarios como estornudos y vómitos.
+    
+    \item \textbf{Cerebelo}: Ubicado en la parte posterior de la cabeza, coordina los movimientos musculares voluntarios y mantiene la postura, el equilibrio y el balance.
+
+    \item \textbf{Puente de Varolio}: En el tronco encefálico, controla movimientos oculares y faciales, así como la sensibilidad facial y el equilibrio.
+    \item \textbf{Bulbo Raquídeo}: La parte más baja del tronco encefálico, controla funciones vitales como el ritmo cardíaco y la respiración.
+    \item \textbf{Médula Espinal}: Extiende desde la base del cerebro hasta la parte inferior de la espalda, transmitiendo mensajes entre el cerebro y el resto del cuerpo.
+\end{itemize}
+
+\subparagraph{Lóbulos del Cerebro}
+
+\begin{itemize}
+    \item \textbf{Lóbulo Frontal}: Ubicado en la parte frontal, se encarga de la personalidad y el movimiento.
+    \item \textbf{Lóbulo Parietal}: En la parte media, ayuda a identificar objetos, comprender relaciones espaciales y interpretar el dolor y el tacto.
+    \item \textbf{Lóbulo Occipital}: En la parte posterior, está relacionado con la visión.
+    \item \textbf{Lóbulo Temporal}: En los lados del cerebro, está asociado con la memoria, el habla y el sentido del olfato.
+\end{itemize}
+\cite{hopkins_ct_brain}
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=14cm]{PlanTesis_FormatoUNSA_2024/Imagenes/basic-anatomy-of-the-brain_spanish.jpg}
+    \caption{Estructura del cerebro.}
+    \label{fig:estructura_cerebro}
+\end{figure}
+
+
+
+\subsubsection{2.3.2 Tomografía Computarizada (TC)}
+
+La tomografía computarizada (TC) del cerebro es un procedimiento no invasivo que utiliza rayos X para crear imágenes horizontales detalladas del cerebro, llamadas cortes, ofreciendo información más precisa sobre el tejido cerebral y las estructuras internas en comparación con las radiografías estándar (\cite{hopkins_ct_brain}) . La TC es la modalidad de imagen primaria utilizada en la mayoría de los centros para evaluar a pacientes con síntomas de accidente cerebrovascular agudo, debido a su amplia disponibilidad, rapidez y seguridad (\cite{peralta_agudelo_2023}).
+\newline
+Durante la TC, el haz de rayos X gira alrededor del cuerpo, permitiendo múltiples vistas del cerebro. Los datos de los rayos X son procesados por una computadora y mostrados en una imagen bidimensional (2D).
+\newline
+La TC del cerebro puede realizarse con o sin el uso de un medio de contraste, una sustancia que mejora la claridad de las imágenes. En algunos casos, el paciente debe ayunar antes del examen si se usa contraste
+(\cite{hopkins_ct_brain}).
+
+\subsubsection{2.3.3 Tomografía computarizada (TC) sin contraste}
+Además de la información clínica, que describe el estado del paciente en su conjunto, los médicos se centran principalmente en las técnicas de diagnóstico por imagen para comprender mejor la situación . Tradicionalmente, el Consejo de Accidentes Cerebrovasculares de la Asociación Estadounidense del Corazón recomienda la tomografía computarizada sin contraste (NCCT) como la primera modalidad de elección para la investigación de accidentes (\cite{BORSOS2024102719}), debido a las siguientes características  (\cite{peralta_agudelo_2023}):
+\begin{itemize}
+    \item \textbf{Visualización rápida}: Las TC proporcionan imágenes detalladas del cerebro rápidamente, lo cual es esencial en situaciones de emergencia, como la evaluación de un accidente cerebrovascular (ACV) o traumatismo craneoencefálico .
+    \item \textbf{Diferenciación de tejidos}: Pueden diferenciar entre diferentes densidades de tejido, permitiendo la identificación de estructuras anatómicas y patologías como hemorragias, tumores y edema cerebral.
+    \item \textbf{No invasivas}: No requieren la inyección de medios de contraste, lo que elimina el riesgo de reacciones adversas a estos productos .
+\end{itemize}
+
+
+\paragraph{Limitaciones}
+\begin{itemize}
+\item \textbf{Menor sensibilidad para ciertas lesiones}: Las TC sin contraste pueden no detectar lesiones isquémicas pequeñas o cambios sutiles en etapas muy tempranas.
+\item \textbf{Exposición a radiación}: Aunque la dosis de radiación es moderada, es importante considerar la exposición acumulativa en pacientes que requieren múltiples estudios 
+\end{itemize}
+
+\subsubsection{2.3.4 Accidentes Cerebrovasculares}
+Un accidente cerebrovascular es una emergencia médica que requiere atención inmediata. Las lesiones cerebrales y otras consecuencias se pueden evitar si se actúa de forma temprana. Existen dos tipos principales de accidente cerebrovascular (\cite{upadhyay2022}) :
+\begin{itemize}
+    \item \textbf{Accidente cerebrovascular hemorrágico}: Cuando se rompe un vaso sanguíneo, se produce un accidente cerebrovascular hemorrágico. Los aneurismas o las malformaciones arteriovenosas (MAV) son las causas más comunes de accidente cerebrovascular hemorrágico.
+    \item \textbf{Accidente cerebrovascular isquémico}: Cuando el flujo sanguíneo a una parte del cerebro se bloquea o disminuye, el tejido cerebral se ve privado de oxígeno y nutrientes, lo que da lugar a un accidente cerebrovascular isquémico.
+\end{itemize}
+
+
+
+\subsubsection{2.3.5 Factores de riesgo}
+
+Los factores de riesgo importantes en la prevención del accidente cerebrovascular se pueden dividir en factores de riesgo modificables y no modificables (\cite{feiginstroke}).
+
+\paragraph{Factores de Riesgo No Modificables:}
+    \begin{itemize}
+        \item \textbf{Edad: } El riesgo aumenta con la edad, siendo del 0.5\% en personas de 18 a 44 años y del 11.2\% en mayores de 75 años.
+        \item \textbf{Sexo: } Mayor prevalencia en hombres, con diferencias que disminuyen después de los 50 años debido a la menopausia en mujeres.
+        \item \textbf{Raza: } Mayor riesgo en personas de raza negra, debido a una mayor prevalencia de hipertensión.
+        \item \textbf{Bajo Peso al Nacer: } Contribuye al riesgo de enfermedad vascular.
+        \item \textbf{Historia Familiar: } Un familiar con enfermedad cerebrovascular incrementa el riesgo. El riesgo es 1.4 veces mayor si el familiar es materno y 2.4 veces mayor si es paterno.
+    \end{itemize}
+
+\paragraph{Factores de Riesgo Modificables}
+\begin{itemize}
+    \item \textbf{Tabaquismo: } Aumenta el riesgo de ictus isquémico y hemorrágico, con un riesgo relativo 1.9 veces mayor en fumadores.
+    \item \textbf{Hipertensión Arterial: } Principal factor de riesgo, especialmente en combinación con la edad avanzada. El riesgo relativo puede alcanzar hasta 8.
+    \item \textbf{Diabetes: } Incrementa el riesgo con una prevalencia del 7.3\%, con un riesgo relativo de 1.8 para diabéticos.
+    \item \textbf{Colesterol Elevado: } Mantener el LDL por debajo de 100 mg/dL es crucial en pacientes con factores de riesgo.
+    \item \textbf{Fibrilación Auricular No Valvular: } Su manejo ha mejorado con nuevos anticoagulantes, aunque el costo sigue siendo una preocupación.
+\end{itemize}
+
+\paragraph{Otros Factores:Consideración de datos adicionales}
+\newline
+La combinación de hipertensión, diabetes y tabaquismo multiplica el riesgo de eventos cerebrovasculares. Los programas de intervención deben enfocarse en controlar la hipertensión y la diabetes, promover cambios en el estilo de vida, y usar medicamentos para el manejo del colesterol y la fibrilación auricular.
+
+\begin{itemize}
+    \item \textbf{Diagnóstico Mejorado: } La fibrilación auricular (FA) se diagnostica más frecuentemente con el uso de Holter prolongados y dispositivos de monitoreo a largo plazo.
+    \item \textbf{Tratamiento: } Los nuevos anticoagulantes son efectivos en la prevención de eventos cerebrovasculares con menos interacciones y sin problemas relacionados con el consumo de vegetales verdes. La evaluación del riesgo debe utilizar escalas como CHADS2 y CHA2DS2-VASc.
+\end{itemize}
+
+
+\subsubsection{2.3.6 Prevención de accidentes cerebrovasculares}
+
+La prevención es una serie de acciones que se hacen para que no ocurra en el evento. Se divide en:
+
+\paragraph{Prevención Primaria}
+El objetivo es evitar el primer evento cerebrovascular.
+\begin{itemize}
+    \item \textbf{Acciones Clave: } Identificación temprana de factores de riesgo, promoción de un estilo de vida saludable, y detección precoz mediante screening de grupos de riesgo \cite{incn2018}. Para ello es importante realizar una evaluación inicial que comtemple la medición de presión arterial, glucosa en ayunas y colesterol, así como la historia familiar de enfermedad cerebrovascular.
+
+    \item \textbf{El uso de herramientas de Evaluación: } El estudio de Framingham y la calculadora de riesgo de la American Heart Association ayudan a estimar el riesgo basado en factores como presión arterial, diabetes y colesterol.
+\end{itemize}
+
+\paragraph{Prevención Secundaria}
+\begin{itemize}
+    \item \textbf{Objetivo:} Prevenir recurrencias en pacientes que ya han tenido un evento cerebrovascular.
+    \item \textbf{Acciones Clave:} Uso de fármacos antitrombóticos como antiagregantes o anticoagulantes (\cite{incn2018}).
+\end{itemize}
+
+En el contexto de la prevención de accidentes cerebrovasculares (ACV), la segmentación de imágenes es fundamental para evaluar la extensión del infarto y guiar decisiones clínicas importantes, como la administración de tratamientos y la identificación de pacientes que podrían beneficiarse de intervenciones adicionales.
+\newline
+
+Identificar áreas de riesgo en imágenes NCCT puede guiar la implementación de medidas preventivas secundarias, como la modificación de factores de riesgo (hipertensión, diabetes, etc.) y el seguimiento continuo para evitar futuros eventos cerebrovasculares.
+\newline
+
+Existe una superposición significativa entre los factores de riesgo que explican los eventos cerebrovasculares (\cite{sabihstroke}).  
+
+
+\subsubsection {2.3.7 Tratamiento y Manejo}
+\paragraph{Intervenciones: } Los pacientes con alto riesgo deben recibir tratamiento continuo para controlar la presión arterial, colesterol y diabetes. Estos tratamientos son de por vida y deben mantenerse incluso si los síntomas mejoran.
+
+
+\paragraph{Recomendaciones}
+\begin{itemize}
+    \item \textbf{Actividad Física:} Se recomienda al menos 40 minutos de actividad física moderada a intensa, 3-4 días a la semana.
+    \item \textbf{Dieta y Nutrición:} Reducir el sodio y aumentar el potasio, seguir una dieta mediterránea rica en vegetales, frutas y pescado.
+    \item \textbf{Tratamiento de la Hipertensión y Dislipidemia:} Despistaje anual de presión arterial, uso de antihipertensivos para presiones $\geq 140/90$ mmHg, y estatinas si el LDL es $\geq 160$ mg/dL o en pacientes de alto riesgo.
+\end{itemize}
+
+
+La prevención primaria y secundaria de enfermedades cerebrovasculares es esencial para mejorar la salud pública. Un enfoque integral en la prevención, el control de factores de riesgo, y programas nacionales pueden reducir significativamente la morbi-mortalidad asociada. La detección precoz y la educación sobre estilos de vida saludables son clave para el manejo efectivo de estas enfermedades (\cite{incn2018}).
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|p{0.48\textwidth}|p{0.48\textwidth}|}
+        \hline
+        \textbf{Factores de riesgo no modificables} & \textbf{Factores de riesgo modificables} \\
+        \hline
+        \begin{itemize}
+            \item Edad (mayor riesgo a medida que aumenta la edad)
+            \item Raza y origen étnico (mayor riesgo en africanos que en blancos)
+            \item Género (mayor riesgo para los hombres, pero esta tendencia desaparece más allá de mediados de los 80)
+            \item Antecedentes familiares (especialmente de enfermedad arterial cerebral)
+            \item Factores de riesgo genéticos (por ejemplo, estados de hipercoagulabilidad, anemia de células falciformes, angiopatía amiloide cerebral)
+        \end{itemize} &
+        \begin{itemize}
+            \item Hipertensión
+            \item Diabetes mellitus
+            \item Obesidad
+            \item Perfil lipídico alterado
+            \item Fibrilación auricular
+            \item Enfermedad cardíaca estructural
+            \item Estenosis de la arteria carótida
+            \item Opciones de estilo de vida: dieta, ejercicio, tabaquismo, alcohol, etc.
+        \end{itemize} \\
+        \hline
+    \end{tabular}
+    \caption{Factores de riesgo para accidentes cerebrovasculares}
+    \label{tab:risk_factors}
+\end{table}
+
+
+\subsubsection{2.3.8 Aprendizaje Profundo Multimodal}
+En la actualidad, los sistemas de atención médica generan grandes cantidades de datos heterogéneos, como imágenes médicas, informes clínicos, señales fisiológicas y secuencias genómicas. La integración y análisis de estos datos multimodales es fundamental para mejorar el diagnóstico, la predicción de enfermedades y los tratamientos personalizados.
+\newline
+
+El aprendizaje profundo ha surgido como una de las principales técnicas para abordar la complejidad de los datos multimodales. Las arquitecturas de redes neuronales profundas, como las redes convolucionales (CNNs) y las redes recurrentes (RNNs), han mostrado un gran potencial para extraer características relevantes de distintos tipos de datos y combinarlas en modelos más robustos y precisos.
+\newline
+
+La fusión multimodal, que se refiere a la combinación de datos de diferentes modalidades en un solo modelo, ha demostrado ser efectiva en una variedad de aplicaciones médicas, incluyendo el diagnóstico basado en imágenes y texto, la predicción de resultados clínicos y el análisis de patrones complejos en datos fisiológicos.
+\newline
+
+Sin embargo, el análisis de datos multimodales también presenta desafíos importantes, como la integración de datos heterogéneos, la escasez de datos etiquetados y la necesidad de interpretar modelos complejos en contextos clínicos. Superar estos desafíos es clave para aprovechar el potencial del aprendizaje profundo en el ámbito médico.
+\newline
+
+\paragraph{Proceso de Aprendizaje Profundo Multimodal}
+
+El proceso de aprendizaje profundo multimodal se centra en la integración de múltiples tipos de datos, como imágenes médicas y datos clínicos, para mejorar la precisión de las predicciones relacionadas con el riesgo de accidente cerebrovascular (ACV). Este proceso implica varios pasos clave:
+
+  \begin{itemize}
+    \item \textbf{Preprocesamiento de Datos:}
+    \begin{itemize}
+        \item Los datos de imágenes médicas y los datos clínicos se preprocesan para asegurar su calidad y relevancia. Esto incluye la normalización de las imágenes y la codificación de las características clínicas.
+    \end{itemize}
+    
+    \item \textbf{Extracción de Características:}
+    \begin{itemize}
+        \item Las redes neuronales convolucionales (CNN) se utilizan para extraer características de las imágenes médicas, mientras que las redes neuronales recurrentes (RNN) o los modelos basados en atención se emplean para manejar los datos secuenciales o categóricos de los registros clínicos.
+    \end{itemize}
+    
+    \item \textbf{Fusión de Modalidades:}
+    \begin{itemize}
+        \item Las características extraídas de cada modalidad se combinan utilizando métodos de fusión, ya sea en etapas tempranas (antes del aprendizaje conjunto) o en etapas tardías (después de que cada modalidad ha sido procesada de manera independiente). Este proceso de fusión es crucial para capturar las interacciones entre los datos de imágenes y los datos clínicos.
+    \end{itemize}
+    
+    \item \textbf{Entrenamiento del Modelo:}
+    \begin{itemize}
+        \item El modelo multimodal se entrena utilizando un conjunto de datos etiquetado, optimizando sus parámetros mediante algoritmos como la retropropagación y el descenso de gradiente. Durante el entrenamiento, se utilizan técnicas de regularización para evitar el sobreajuste.
+    \end{itemize}
+    
+    \item \textbf{Evaluación y Validación:}
+    \begin{itemize}
+        \item El rendimiento del modelo se evalúa utilizando métricas como la precisión, la sensibilidad, la especificidad, y el área bajo la curva ROC (AUC-ROC). Además, se emplean técnicas de validación cruzada para garantizar que el modelo generalice bien a nuevos datos.
+    \end{itemize}
+\end{itemize}
+
+Este enfoque multimodal permite una integración más completa de la información disponible, lo que puede llevar a predicciones más precisas y robustas en el contexto clínico (\cite{BEHRAD2022117006}).
+\newline
+
+En el primer paso del análisis de datos médicos multimodales, se debe decidir las fuentes de datos, la estrategia de fusión, la estrategia de aprendizaje y la arquitectura de aprendizaje profundo (como se muestra en la Fig. 3). Elegir la combinación correcta de fuentes de datos en análisis multimodales es fundamental porque una combinación incorrecta conduce a un menor rendimiento. Las fuentes de datos deben proporcionar información complementaria para mejorar los resultados. El siguiente paso es decidir cómo integrar diferentes modalidades. Además, una adecuada debe elegir una estrategia de aprendizaje. Finalmente, los investigadores deberían elegir una arquitectura de red. Conocer diferentes arquitecturas de aprendizaje profundo ayuda a encontrar la arquitectura más adecuada para la investigación. En las siguientes secciones se explican estos conceptos (\cite{BEHRAD2022117006}).
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=18cm]{PlanTesis_FormatoUNSA_2024/Imagenes/multimodal_dl_process.png}
+    \caption{Cuatro decisiones sobre el análisis de datos médicos multimodales utilizando algoritmos de aprendizaje profundo.}
+    \label{fig:estructura_cerebro}
+\end{figure}
+

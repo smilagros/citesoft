@@ -1,0 +1,267 @@
+\section{I. PLANTEAMIENTO METODOLÓGICO} \label{cap:CAPI}
+
+\subsection{1.1 Descripción de la Realidad Problemática}
+
+La enfermedad cerebrovascular (ECV) es una de las causas más importantes de mortalidad y discapacidad en el Perú y a nivel mundial (\cite{MALAGA2018}), si bien es cierto que la ECV son un conjunto de trastornos que afectan los vasos sanguíneos del cerebro y son responsables de un porcentaje significativo de muertes prematuras  a nivel global y local (\cite{bernaberevista}), en términos de prevención el accidente cerebrovascular (ACV) es el más estudiado y focalizado.
+\newline
+
+Según la Organización Mundial de la Salud, los ACV son la segunda causa de muerte a nivel mundial (\cite{incn2022}), cobrando más de 6.6 millones de vidas cada año. En el Perú es una de las principales causas de muerte prematura y discapacidad. También se observa una muy importante asociación con factores de riesgos modificables como la hipertensión arterial y la diabetes con esta patología. Además, el ictus es una enfermedad de alto costo y comúnmente es asumido por la familia, en especial cuando el paciente es dado de alta de los hospitales (\cite{incn2024}).Controlar los factores de riesgo puede reducir significativamente la incidencia de ACV (\cite{acv_s_f}).
+\newline
+
+Carlos Abanto, jefe del Centro de Investigación en Enfermedad Cerebrovascular del Instituto Nacional de Ciencias Neurológicas (INCN), abordó la prevención primaria en enfermedades cerebrovasculares. Destacó que estas enfermedades son la segunda causa de muerte a nivel mundial, solo superadas por el Alzheimer, y una importante causa de discapacidad.
+\newline
+
+
+Perú está en una fase de crecimiento económico y experimenta un cambio en su perfil epidemiológico: disminución de enfermedades infecciosas y aumento de enfermedades no comunicables. Un estudio de 2007 reveló que el 10-11\% de los pacientes muere a los 3 meses después del alta, y esta cifra puede estar subestimada debido a la falta de seguimiento.
+\newline
+
+
+El mismo estudio de 2007 mostró que aproximadamente la mitad de los pacientes mantienen independencia funcional después de un ictus, mientras que la otra mitad requiere asistencia. La edad es un factor crucial en el pronóstico y la severidad del evento.
+\newline
+
+Por otro lado, los avances tecnológicos en medicina, como las tomografías computarizadas sin contraste, resonancias magnéticas (MRI) y análisis clínico, han revolucionado el diagnóstico y tratamiento de diversas enfermedades. Sin embargo, en Perú, la limitada disponibilidad de resonancia magnética resalta la necesidad de desarrollar herramientas diagnósticas alternativas, especialmente para abordar el ACV. En este contexto, un modelo de aprendizaje profundo multimodal adaptado a imágenes de TC podría ofrecer una solución eficaz. Este enfoque no solo podría acelerar el proceso de diagnóstico, sino también mejorar los resultados clínicos, especialmente en situaciones de emergencia.
+\newline
+
+\subsection{1.2 Problema Principal}
+En Perú, la prevención de los accidentes cerebrovasculares (ACV) es crucial debido a su impacto significativo en la salud pública y económica. Los ACV son una de las principales causas de muerte y discapacidad en el país, lo que subraya la importancia de implementar estrategias efectivas para reducir su incidencia y mejorar los resultados de salud de la población (\cite{MALAGA2018}).
+\newline
+
+Las estrategias de prevención primaria se centran en modificar los factores de riesgo conocidos, que incluyen la hipertensión, la diabetes, la dislipidemia (colesterol alto), el tabaquismo, la obesidad, la inactividad física y una dieta poco saludable. Promover estilos de vida saludables, como una dieta equilibrada y la actividad física regular, juega un papel crucial en la reducción del riesgo de ACV.
+\newline
+
+A pesar de los avances en tecnología de imágenes médicas, la variabilidad en la interpretación de los resultados y la falta de disponibilidad de equipos avanzados en muchas regiones, incluido Perú, plantean desafíos significativos. Aquí es donde se hace uso del aprendizaje profundo multimodal, una subdisciplina del aprendizaje automático que ha demostrado un rendimiento sobresaliente en tareas de reconocimiento y segmentación de imágenes. El uso de técnicas de aprendizaje profundo multimodal podría ayudar a mejorar la precisión en el diagnóstico temprano y la gestión de factores de riesgo, incluso en entornos con recursos limitados (\cite{incn2024}).
+\newline
+
+\subsection{1.3 Objetivos de la Investigación}
+
+\subsubsection{1.3.1 Objetivo General}
+Proponer un modelo de aprendizaje profundo multimodal basado en deep learning para ayudar al diagnóstico de ACV a partir de tomografías computarizadas sin contraste  o resonancias magnéticas e historias clínicas.
+
+\subsubsection{1.3.2 Objetivos Específicos}
+\begin{APAenumerate}
+    \item Realizar una revisión del estado del arte sobre el uso de los modelos de aprendizaje profundo multimodal en el diagnóstico temprano de ACV, identificando los enfoques, desafíos y avances más recientes.
+     \item Seleccionar un modelo de aprendizaje profundo multimodal adecuado para apoyo al diagnóstico temprano de ACV a partir de tomografías computarizadas sin contraste o resonancias magnéticas e historias clínicas , basado en su rendimiento en estudios previos.    
+     \item Diseñar experimentos para evaluar el rendimiento del modelo seleccionado utilizando conjuntos de datos y métricas de evaluación apropiadas.
+    \item Evaluar resultados experimentales del modelo elegido.
+
+\end{APAenumerate}
+  
+\subsection{1.4 Hipótesis de la Investigación}
+\begin{APAenumerate}
+La integración de un modelo de aprendizaje profundo multimodal que combine datos de tomografías computarizadas sin contraste, resonancias magnéticas y datos clínicos históricos proporcionará un apoyo significativo en el diagnóstico temprano de accidentes cerebrovasculares (ACV) isquémicos. Se espera que este enfoque aumente la precisión y eficiencia del diagnóstico en comparación con los métodos tradicionales, permitiendo una intervención médica más oportuna y eficaz. 
+\end{APAenumerate}
+
+\subsection{1.5 Variables e Indicadores}
+\subsubsection{1.5.1 Variable Independiente}
+La variable independiente en esta investigación es el modelo de aprendizaje profundo multimodal. Este modelo combina datos de diferentes fuentes, específicamente tomografías computarizadas sin contraste, resonancias magnéticas y datos clínicos históricos, para apoyar el diagnóstico temprano de accidentes cerebrovasculares (ACV) isquémicos.
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        \rowcolor[HTML]{C0C0C0}
+        \textbf{Indicadores} & \textbf{Índices}  \\
+        \hline
+        Precisión de diagnóstico & 91\%\\
+        \hline
+        Sensibilidad (Recall/Sensitivity)&  88\%\\
+        \hline
+        Especificidad (Specificity)&  93\%\\
+        \hline
+    \end{tabular}
+    \caption{Indicadores e Índices del Modelo Multimodal para Diagnóstico de ACV}
+    \label{tab:preciseg}
+\end{table}
+\subsubsection{1.5.2 Variable Dependiente}
+\begin{itemize}
+    \item \textbf{Precisión del Diagnóstico}: La exactitud del modelo de aprendizaje profundo multimodal para identificar correctamente los casos de ACV isquémico en comparación con los métodos diagnósticos tradicionales.
+    \item \textbf{Eficiencia del Diagnóstico}: El tiempo requerido para realizar un diagnóstico preciso utilizando el modelo de aprendizaje profundo multimodal.
+\end{itemize}
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+         \rowcolor[HTML]{C0C0C0}
+        \textbf{Indicadores} & \textbf{Índices} \\ \hline
+        Precisión del Diagnóstico &  85\% y 95\%,  \\ \hline
+        Eficiencia del Diagnóstico & 90\% y 95\%,  \\ \hline
+    \end{tabular}
+    \caption{Indicadores e Índices del Modelo Multimodal para Diagnóstico de ACV}
+    \label{table:indicadores_indices}
+\end{table}
+
+\subsection{1.6 Viabilidad de la Investigación}
+\subsubsection{1.6.1 Viabilidad técnica}
+
+\begin{itemize}
+    \item Posibilidad tecnológica: para el desarrollo del proyecto se requiere una computadora y software especializado. Asimismo, se requieren imágenes de TC y historias clínicas. Se cuenta con los equipos e imágenes de TC.
+    \item Infraestructura: Los laboratorios de la escuela profesional de ingeniería de sistemas; los cuales son suficientes para los equipos requeridos. 
+\end{itemize}
+En base a lo anterior se puede concluir que es viable técnicamente.
+\subsubsection{1.6.2 Viabilidad operativa}
+Se cuenta con el compromiso tanto del investigador, asesor de tesis como del médico especialista en neurología para llevar a cabo la investigación. Asimismo, al tener el soporte de un médico especialista para el desarrollo de la investigación, se puede contar con una institución médica para validar los resultados. Por lo tanto, se puede determinar que es factible operacionalmente.
+\subsubsection{1.6.3 Viabilidad económica}
+El plan de tesis presentado se autofinanciará.
+\subsection{1.7 Justificación e Importancia de la Investigación} 
+\subsubsection{1.7.1 Justificación}
+La detección temprana y la intervención preventiva son pilares fundamentales en la gestión del riesgo de accidente cerebrovascular (\cite{MALAGA2018}). Los sistemas multimodales que integran imágenes médicas avanzadas y datos clínicos detallados, utilizando técnicas de aprendizaje profundo multimodal, ofrecen una estrategia efectiva para abordar este desafío de manera proactiva.
+\newline
+
+Las imágenes médicas, como las resonancias magnéticas y las tomografías computarizadas sin contraste, proporcionan información detallada sobre la anatomía cerebral y la salud vascular. Estos datos visuales pueden revelar signos precursores de riesgo, como placas arteriales, estenosis o microhemorragias, que son indicativos de vulnerabilidad vascular (\cite{HUERFANO2016}). Combinados con datos clínicos que incluyen factores de riesgo tradicionales como la presión arterial, el colesterol, el historial médico y los hábitos de vida, estos sistemas multimodales permiten una evaluación integral y precisa del riesgo individual de ACV (\cite{BORSOS2024102719}).
+\newline
+
+La capacidad de aprendizaje profundo multimodal para aprender representaciones complejas y no lineales a partir de datos heterogéneos es crucial en este contexto (\cite{SUN2023104482}). Los algoritmos de aprendizaje profundo multimodal pueden identificar patrones sutiles y relaciones entre diferentes tipos de datos, lo que mejora significativamente la capacidad predictiva del sistema. Esto no solo facilita la identificación temprana de individuos en riesgo elevado, sino que también permite la personalización de estrategias preventivas específicas para cada paciente (\cite{ngiam2011multimodal, ramachandram2017deep, esteva2019guide, litjens2017survey}).
+\newline
+
+Desde una perspectiva preventiva, estos sistemas multimodales pueden recomendar intervenciones proactivas, como cambios en el estilo de vida, terapias farmacológicas preventivas o programas de monitoreo regular. Estas medidas no solo pueden reducir el riesgo de un evento cerebrovascular agudo, sino que también pueden mejorar la calidad de vida a largo plazo al prevenir daños cerebrales potencialmente devastadores (\cite{esteva2019guide, litjens2017survey}).
+\newline
+
+Además de su aplicación clínica directa, estos sistemas también ofrecen oportunidades significativas para la investigación médica. La capacidad de analizar grandes volúmenes de datos longitudinales puede revelar nuevos biomarcadores predictivos y mejorar la comprensión de los mecanismos subyacentes del riesgo de ACV. Esto puede abrir nuevas vías para el desarrollo de intervenciones más efectivas y personalizadas en la prevención del ACV (\cite{esteva2019guide, litjens2017survey}).
+
+\newline
+En conclusión, los sistemas de aprendizaje profundo multimodales representan una herramienta poderosa y prometedora en la prevención del riesgo de accidente cerebrovascular. Al integrar datos complejos de múltiples fuentes, estos sistemas no solo mejoran la capacidad diagnóstica y predictiva, sino que también ofrecen la posibilidad de transformar la atención médica preventiva al identificar y abordar el riesgo de ACV antes de que se produzcan eventos clínicamente significativos.
+
+\subsubsection{1.7.2 Importancia}
+
+La prevención del accidente cerebrovascular (ACV) es un desafío médico significativo debido a su potencial impacto devastador en la salud y la calidad de vida de los individuos. En este contexto, los sistemas  que integran imágenes médicas avanzadas y datos clínicos mediante técnicas de aprendizaje profundo multimodal emergen como herramientas cruciales para mejorar la detección temprana, la evaluación de riesgos y la implementación de estrategias preventivas efectivas (\cite{esteva2019guide, litjens2017survey}).
+
+\begin{itemize}
+\item Mejora en la Precisión Diagnóstica y Evaluación de Riesgos
+Los sistemas de aprendizaje profundo multimodales permiten una evaluación integral del riesgo de ACV al combinar datos detallados de múltiples fuentes. Las imágenes médicas proporcionan una visión directa de la anatomía cerebral y la salud vascular, identificando anomalías sutiles que podrían indicar predisposición al ACV, como placas arteriales o microhemorragias. Estos datos visuales se complementan con información clínica que incluye factores de riesgo tradicionales como la presión arterial, el colesterol y el historial médico. La capacidad de los algoritmos de aprendizaje profundo multimodal para aprender y correlacionar estos datos mejora significativamente la precisión diagnóstica y la evaluación de riesgos, permitiendo la identificación temprana de individuos en riesgo elevado (\cite{esteva2019guide, litjens2017survey}).
+
+
+\item Los sistemas multimodales generan perfiles de riesgo personalizados basados en datos biomédicos y de estilo de vida. Estas estrategias no solo reducen el riesgo de ACV agudo, sino que también mejoran la gestión a largo plazo de la salud vascular y cerebral del paciente, promoviendo una mejor calidad de vida y mitigando la carga económica asociada (\cite{esteva2019guide, litjens2017survey}).
+
+
+\item Los sistemas de aprendizaje profundo multimodal no solo tienen aplicaciones clínicas directas, sino que también permiten analizar grandes volúmenes de datos para revelar biomarcadores predictivos, mejorar la comprensión del riesgo de ACV y avanzar en la fisiopatología y terapias.
+(\cite{esteva2019guide, litjens2017survey}).
+\end{itemize}
+
+En resumen, los sistemas de aprendizaje profundo multimodal representan una herramienta integral y prometedora en la prevención del riesgo de accidente cerebrovascular. Al integrar datos complejos de múltiples fuentes, estos sistemas mejoran la precisión diagnóstica, personalizan las estrategias preventivas y promueven la investigación médica, transformando así la gestión de la salud vascular y cerebral para una población cada vez más susceptible a este tipo de eventos.
+\subsubsection{1.7.3 Alcance}
+
+El alcance de un estudio o proyecto que utilice sistemas de aprendizaje profundo multimodal para la prevención del riesgo de accidente cerebrovascular (ACV) puede abarcar varios aspectos clave:
+\begin{itemize}
+    \item Desarrollo y Validación de Modelos Predictivos: El estudio se enfocará en desarrollar y validar modelos de aprendizaje profundo multimodal que integren imágenes médicas y datos clínicos para predecir el riesgo individual de ACV. Esto incluye la selección adecuada de algoritmos de aprendizaje profundo multimodal, la optimización de hiperparámetros y la evaluación exhaustiva de la precisión y la robustez del modelo.
+
+    \item Integración de Datos Multimodales: Es fundamental integrar y procesar datos heterogéneos de manera efectiva. El alcance podría incluir la implementación de técnicas avanzadas de procesamiento de imágenes (por ejemplo, redes neuronales convolucionales) y procesamiento de lenguaje natural para manejar datos textuales clínicos, asegurando una representación completa y precisa del estado de salud del paciente.
+
+    \item Personalización del Tratamiento Preventivo: El estudio explorará cómo los modelos desarrollados pueden ser utilizados para personalizar estrategias preventivas. Esto implica identificar factores de riesgo específicos y recomendar intervenciones adaptadas a las necesidades individuales de cada paciente, como cambios en el estilo de vida, terapias farmacológicas preventivas y programas de seguimiento médico.
+
+    \item Validación Clínica y Aplicabilidad Práctica: Es esencial validar la eficacia clínica de los modelos en entornos reales de atención médica. El alcance incluirá la colaboración con profesionales de la salud para implementar y evaluar la utilidad práctica de los sistemas multimodales en la detección temprana y la gestión del riesgo de ACV.
+
+    \item Investigación Continua y Mejora del Modelo: Además, el estudio contemplará la investigación continua para mejorar los modelos de aprendizaje profundo multimodal, incorporando nuevos datos y conocimientos médicos para mantener la precisión predictiva a lo largo del tiempo. Esto podría incluir la identificación de nuevos biomarcadores, la optimización de algoritmos y la adaptación a cambios en las prácticas clínicas y epidemiológicas.
+\end{itemize}
+
+\subsection{1.8 Línea, Tipo y Nivel de Investigación}
+\subsubsection{1.8.1 Línea de la investigación}
+Inteligencia Artificial, sublínea de Aprendizaje Profundo Multimodal basado en Deep Learning.
+\subsubsection{1.8.2 Tipo de la investigación}
+El tipo de investigación planteada es investigación aplicada. Considerando que la investigación aplicada tiene diversos tipos, la investigación propuesta será experimental, ya que para el desarrollo de la investigación es fundamental analizar las imágenes de TC e historias clínicas controladas por un médico especialista en el área de neurología.
+\subsubsection{1.8.3 Nivel de la investigación}
+El nivel de la investigación es explicativo y aplicado.
+\begin{itemize}
+    \item Explicativo: Se busca no solo describir el fenómeno del diagnóstico de ACV mediante modelos de aprendizaje profundo multimodal, sino también entender y explicar cómo la integración de datos de tomografías computarizadas sin contraste,resonancias magnéticas y datos clínicos históricos puede mejorar la precisión y eficiencia del diagnóstico temprano de ACV isquémicos.
+    \item Aplicado: La investigación tiene un enfoque práctico con el objetivo de desarrollar y evaluar un modelo específico que pueda ser utilizado en entornos clínicos reales. La meta es proporcionar una herramienta que mejore los resultados clínicos y la eficiencia del diagnóstico de ACV isquémicos, contribuyendo directamente a la práctica médica y la salud pública.
+\end{itemize}
+
+\subsubsection{1.8.4 Diseño de la investigación}
+El diseño de la investigación planteada es experimental o de laboratorio. Inicialmente, se utilizarán imágenes médicas (como tomografías computarizadas sin contraste) y datos de historias clínicas para desarrollar un modelo de aprendizaje profundo multimodal. Se considerará la colaboración con un especialista en neurología en el futuro para validar clínicamente los resultados obtenidos. Esto permitirá asegurar la precisión y efectividad del modelo en el diagnóstico temprano de ACV isquémicos, integrando datos complejos de manera robusta y validada desde el punto de vista médico.
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=16cm]{PlanTesis_FormatoUNSA_2024/Imagenes/diagrama1.png}
+	\caption{Esquema de las etapas a seguir para el desarrollo de la investigación. La primera etapa se encarga del preprocesamiento de data. La segunda etapa tiene por finalidad la extracción de características. La tercera etapa se encarga de la fusión de los datos para finalmente dar un diagnóstico .Fuente: Elaboración Propia.}
+	\label{Figure:figure3}
+\end{figure}
+
+
+\subsubsection{1.8.5 Técnicas}
+\begin{itemize}
+
+\item Revisión sistemática de la literatura concerniente a técnicas de aprendizaje profundo para mejorar la precisión en el diagnóstico, integrando de manera efectiva los datos obtenidos.
+\item La presente investigación emplea una metodología basada en la observación experimental para analizar imágenes de TC sin contraste y datos clínicos. A partir de las imágenes médicas e historias clínicas, se extraerá la información relevante bajo condiciones controladas. 
+
+
+\end{itemize}
+\subsubsection{1.8.6 Instrumentos}
+
+
+\begin{itemize}
+    \item \textbf{Imágenes de Tomografía Computarizada (TC)}
+    \begin{itemize}
+       Obtención de imágenes detalladas del cerebro para detectar y analizar accidentes cerebrovasculares.
+    \end{itemize}
+    
+    \item \textbf{Historias Clínicas}
+    \begin{itemize}
+        Utilización de historias clínicas para obtener datos como edad, sexo y algunas enfermedades de los pacientes.
+    \end{itemize}
+    
+    \item \textbf{Técnicas de Análisis de Datos}
+    \begin{itemize}
+        \item \textbf{Software de Procesamiento de Imágenes Médicas:} Programas para la visualización y análisis de imágenes de TC.
+        \item \textbf{Herramientas de Análisis Clínico:} Aplicaciones para realizar análisis estadísticos y clínicos de los datos.
+    \end{itemize}
+    
+    \item \textbf{Técnicas de Aprendizaje Profundo}
+    \begin{itemize}
+        \item \textbf{Librerías de Aprendizaje Profundo:} TensorFlow, Keras o PyTorch para desarrollar y evaluar modelos.
+        \item \textbf{Hardware de Alto Rendimiento:} GPUs y TPUs para acelerar el entrenamiento y la ejecución de modelos.
+    \end{itemize}
+\end{itemize}
+
+
+\subsubsection{1.8.7 Cronograma}
+
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|>{\centering\arraybackslash}m{5cm}|>{\centering\arraybackslash}m{5cm}|>{\centering\arraybackslash}m{3cm}|>{\centering\arraybackslash}m{3cm}|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{ACTIVIDAD} & \textbf{DESCRIPCIÓN DE LA ACTIVIDAD} & \textbf{FECHA DE INICIO} & \textbf{FECHA DE FIN} \\ \hline
+ Revisión del estado del arte  & Identificar enfoques, desafíos y avances más recientes. & 01/04/2024  & 18/06/2024 \\ \hline
+Seleccionar un modelo de aprendizaje profundo multimodal&  Seleccionar un modelo basado en su rendimiento en estudios previos & 25/04/2024  & 09/09/2024 \\ \hline
+Diseño de experimentos & Evaluación de el rendimiento del modelo seleccionado & 20/09/2024  & 17/10/2024   \\ \hline
+Evaluar resultados & Evaluación de resultados del modelo seleccionado & 20/10/2024  & 17/11/2024   \\ \hline
+\end{tabular}
+\caption{Cronograma de Actividades}
+\end{table}
+
+
+\subsubsection{1.8.8 Temario del Informe Final}
+\begin{itemize}
+
+\item[I.] PLANTEAMIENTO METODOLÓGICO
+\begin{itemize}
+\item [1.1] Descripción de la Realidad Problemática 
+\item [1.2] Problema Principal 
+\item [1.3] Objetivos de la Investigación 
+\item [1.4] Hipótesis de la Investigación 
+\item [1.5] Variables e Indicadores
+\item [1.6] Viabilidad de la Investigación 
+\item [1.7] Justificación e Importancia de la Investigación
+\item [1.8] Linea, Tipo y Nivel de Investigación
+
+\end{itemize}
+\item[II.] MARCO TEORICO
+\begin{itemize}
+\item [2.1] Antecedentes de investigación 
+\item [2.2] Estado del Arte
+\item [2.3] Marco Conceptual
+\end{itemize}
+\item[III.] DESARROLLO DE LA PROPUESTA
+\item[IV.] DESARROLLO DE PRUEBAS CON EL USO DE METRICAS
+\item[V.] EXPERIMENTACION Y VALIDACION
+\end{itemize}
+CONCLUSIONES 
+
+RECOMENDACIONES
+
+RABAJOS FUTUROS
+
+REFERENCIAS BIBLIOGRÁFICAS
+
+ANEXOS
+
+

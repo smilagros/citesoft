@@ -1,0 +1,42 @@
+\documentclass[stu, 12pt, letterpaper, donotrepeattitle, floatsintext, natbib]{apa7}
+\usepackage[utf8]{inputenc}
+\usepackage{comment}
+%\usepackage{marvosym}
+\usepackage{graphicx}
+\usepackage{float}
+%\usepackage[normalem]{ulem}
+\usepackage[english,en-tabla]{babel}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{hyperref}
+\usepackage{apacite}
+\hypersetup{ colorlinks=true,                     %habilitar colorear enlaces
+                     linkcolor=black,
+                     filecolor=magenta,
+                     urlcolor=black,
+                     citecolor=black,
+                    }
+\selectlanguage{english}
+%\useunder{\uline}{\ul}{}
+%\newcommand{\myparagraph}[1]{\paragraph{#1}\mbox{}\\}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{array}
+\usepackage{colortbl}
+\usepackage{float} % Para utilizar la opción [H]                    
+
+
+
+\begin{document} 
+\input{PortadaPlan}
+
+\tableofcontents
+\newpage
+\input{Cap_1} %Inserta el capítulo 1
+
+\newpage
+\input{Cap_2} %Inserta el capítulo 2
+
+\renewcommand\refname{\large\textbf{Referencias}}
+\bibliography{Referencias.bib}
+
+
+\end{document}
